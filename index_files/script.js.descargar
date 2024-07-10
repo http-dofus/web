@@ -1,0 +1,27 @@
+let a = document.querySelector(".close1");
+let b = document.querySelector(".close2");
+let c = document.querySelector(".zeboverlay");
+let d = document.querySelectorAll(".reap");
+
+
+
+	
+//document.querySelector("body").style.display = "block";
+
+
+
+a.addEventListener('click', function(){
+	b.style.display = "none";
+	c.style.display = "none";
+})
+c.addEventListener('click', function(){
+	b.style.display = "none";
+	c.style.display = "none";
+})
+
+for(i=0; i<d.length ; i++) {
+	d[i].addEventListener('click', function(){
+	b.style.display = "block";
+	c.style.display = "block";
+})
+}
